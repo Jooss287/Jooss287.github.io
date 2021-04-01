@@ -39,8 +39,6 @@ Git Repo를 연동시켜야 제대로 된 화면을 볼 수 있으므로 우선 
     9. 메인 창에서 선택한 commit의 변경된 파일 리스트
     10. 9번에서 선택한 파일의 파일 내용 미리보기
 
-[Git을 이용한 작업 프로세스 보기](How_to_use/git_work_process.md)
-
 ## 작업을 완료했다면 commit과 push를 해 보자.
 편의상 다른작업 repo의 작업내용을 들고 왔다.
 ![commit 화면](/assets/img/20-01-01-SourceTree_Commit.png)
