@@ -10,18 +10,6 @@ toc: true
 시간을 투자하면 복구할수는 있지만 그 시간을 최소한으로 하기 위해 md파일로 작성해 둔다.
 이 글은 세팅을 하는것에만 중점을 두고 소프트웨어의 사용법에 대해서는 적지 않는다.  
 
-* [게임용 PC 세팅](TwoCom_record_setting.md#%EA%B2%8C%EC%9E%84%EC%9A%A9-pc-%EC%84%B8%ED%8C%85)
-    * [화면을 녹화용 화면으로 캡쳐하기](TwoCom_record_setting.md#게임용-화면을-녹화용-화면으로-캡쳐하기)
-    * [소리를 녹화용 PC로 보내기](TwoCom_record_setting.md#게임용-pc의-소리를-녹화용-pc로-보내기)
-    * [게임소리를 녹화용 PC로 보내기](TwoCom_record_setting.md#게임용-pc의-게임소리를-녹화용-pc로-보내기)
-    * [디스코드의 소리를 녹화용 PC로 보내기](TwoCom_record_setting.md#디스코드의-소리를-녹화용-pc로-보내기)
-    * [마이크 소리를 디스코드와 녹화용 PC로 보내기](TwoCom_record_setting.md#게임용-pc의-마이크-소리를-디스코드와-녹화용-pc로-보내기)
-* [녹화용 PC 세팅](TwoCom_record_setting.md#녹화용-pc-세팅)
-    * [자체 오디오 루트 만들기](TwoCom_record_setting.md#녹화용-pc-자체-오디오-루트-만들기)
-    * [게임용 PC에서 들어온 소리를 이용하는 오디오 루트 만들기](TwoCom_record_setting.md#게임용-pc에서-들어온-소리를-이용하는-오디오-루트-만들기)
-    * [녹화용 PC 세팅에서 장비 이용법](TwoCom_record_setting.md#녹화용-pc-세팅에서-장비-이용법)
-
-
 ## 보유상황
 * 게임용 PC
     * X6 Supercast capture board
