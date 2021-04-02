@@ -12,3 +12,6 @@ vendor
 # npm dependencies
 node_modules
 package-lock.json
+
+# ignore Posting folter
+_post
