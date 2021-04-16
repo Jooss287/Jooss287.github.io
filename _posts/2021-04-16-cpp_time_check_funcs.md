@@ -35,6 +35,7 @@ Windows OS에는 다양한 Time Check 방법들이 존재합니다.
 
 # 함수 별 수행시간  체크
 ## 수행시간 __0.1ms__  
+
 * `GetTickCount`가 0 or 16ms인 것이 눈에 띕니다. IRQ에 영향을 받아 시간 분해능(Resolution)이 16ms가량 되는 것을 알 수 있습니다.
 
 | Name | 1회 | 2회 | 3회 | 4회 | 5회 | 6회 | 7회 | 8회 | 9회 | 10회 |
@@ -44,9 +45,11 @@ Windows OS에는 다양한 Time Check 방법들이 존재합니다.
 | `timeGetTime()` |1ms|3ms|2ms|2ms|1ms|2ms|2ms|2ms|2ms|2ms|
 | `system_clock::now()` |1.39ms|1.94ms|1.58ms|1.70ms|1.70ms|1.56ms|1.72ms|1.57ms|1.62ms|1.69ms|
 | `QueryPerformenceCounter` |1.89ms|1.64ms|1.71ms|1.72ms|1.71ms|1.60ms|1.43ms|1.64ms|1.53ms|1.67ms|
+
 ___ 
 
 ## 수행시간 __1ms__  
+
 | Name | 1회 | 2회 | 3회 | 4회 | 5회 | 6회 | 7회 | 8회 | 9회 | 10회 |
 |:----:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |`clock_t`|2ms|2ms|1ms|2ms|1ms|2ms|2ms|2ms|1ms|2ms
@@ -54,9 +57,11 @@ ___
 |`timeGetTime()`|1ms|2ms|2ms|2ms|2ms|2ms|2ms|1ms|2ms|2ms
 |`system_clock::now()`|1.50ms|1.59ms|1.46ms|1.39ms|1.07ms|1.33ms|1.57ms|1.51ms|1.37ms|1.39ms
 |`QueryPerformenceCounter`|2.31ms|1.42ms|1.91ms|1.31ms|1.38ms|1.49ms|1.52ms|1.69ms|1.49ms|1.42ms
+
 ___ 
 
 ## 수행시간 __5ms__  
+
 | Name | 1회 | 2회 | 3회 | 4회 | 5회 | 6회 | 7회 | 8회 | 9회 | 10회 |
 |:----:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |`clock_t`|5ms|6ms|5ms|6ms|6ms|6ms|6ms|6ms|6ms|6ms
@@ -64,9 +69,11 @@ ___
 |`timeGetTime()`|6ms|5ms|7ms|5ms|6ms|6ms|5ms|6ms|6ms|6ms
 |`system_clock::now()`|6.14ms|5.03ms|5.51ms|5.82ms|5.88ms|5.18ms|6.01ms|5.13ms|5.25ms|5.11ms
 |`QueryPerformenceCounter`|5.93ms|5.76ms|5.40ms|5.44ms|5.79ms|5.07ms|5.89ms|5.66ms|5.04ms|5.82ms
+
 ___ 
 
 ## 수행시간 __20ms__  
+
 | Name | 1회 | 2회 | 3회 | 4회 | 5회 | 6회 | 7회 | 8회 | 9회 | 10회 |
 |:----:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |`clock_t`|21ms|21ms|21ms|20ms|21ms|20ms|21ms|21ms|21ms|20ms
@@ -74,9 +81,11 @@ ___
 |`timeGetTime()`|20ms|20ms|21ms|21ms|21ms|21ms|21ms|21ms|22ms|20ms
 |`system_clock::now()`|20.35ms|20.67ms|20.84ms|20.97ms|20.96ms|20.21ms|20.93ms|20.14ms|20.37ms|20.45ms
 |`QueryPerformenceCounter`|20.51ms|20.89ms|20.17ms|20.49ms|20.56ms|20.93ms|20.67ms|20.03ms|20.94ms|20.65ms
+
 ___ 
 
 ## 수행시간 __100ms__  
+
 | Name | 1회 | 2회 | 3회 | 4회 | 5회 | 6회 | 7회 | 8회 | 9회 | 10회 |
 |:----:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |`clock_t`|101ms|101ms|100ms|101ms|101ms|101ms|101ms|101ms|101ms|100ms
@@ -84,9 +93,11 @@ ___
 |`timeGetTime()`|101ms|101ms|101ms|101ms|101ms|101ms|100ms|101ms|100ms|101ms
 |`system_clock::now()`|100.41ms|100.30ms|100.21ms|100.19ms|100.26ms|100.17ms|101.26ms|100.89ms|100.43ms|100.93ms
 |`QueryPerformenceCounter`|100.33ms|100.38ms|100.07ms|100.98ms|100.79ms|100.41ms|100.53ms|100.23ms|100.70ms|100.35ms
+
 ___ 
 
 ## 수행시간 __1000ms__  
+
 * 사실상 수행시간이 1s단위까지 오게 되면 모든 시간 함수들의 time check 능력이 크게 차이나지 않습니다.
 
 | Name | 1회 | 2회 | 3회 | 4회 | 5회 | 6회 | 7회 | 8회 | 9회 | 10회 |
