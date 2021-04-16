@@ -2,7 +2,7 @@
 title: GitGui Sourcetree 간단 사용법
 date: 2020-01-01 18:30:00 +0900
 categories: [Git]
-tags: [git sourcetree]     # TAG names should always be lowercase
+tags: [git, utility]     # TAG names should always be lowercase
 toc: true
 ---
 

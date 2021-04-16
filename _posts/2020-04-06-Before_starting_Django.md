@@ -2,7 +2,7 @@
 title: Django를 시작하기 전에 알아야 할 배경지식
 date: 2020-04-06 18:30:00 +0900
 categories: [Language, Python, Django]
-tags: [python django]     # TAG names should always be lowercase
+tags: [django]     # TAG names should always be lowercase
 toc: true
 ---
 

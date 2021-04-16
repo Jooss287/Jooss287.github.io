@@ -2,7 +2,7 @@
 title: Git commit의 Author 변경하기
 date: 2020-09-07 18:30:00 +0900
 categories: [Git]
-tags: [git commit]     # TAG names should always be lowercase
+tags: [git, commit]     # TAG names should always be lowercase
 toc: true
 ---
 

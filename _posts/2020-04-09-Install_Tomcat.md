@@ -2,7 +2,7 @@
 title: Django를 위해 Tomcat를 설치하기
 date: 2020-04-09 18:30:00 +0900
 categories: [Language, Python, Django]
-tags: [python django tomcat]     # TAG names should always be lowercase
+tags: [tomcat, env setting]     # TAG names should always be lowercase
 toc: true
 ---
 

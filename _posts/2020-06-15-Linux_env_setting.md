@@ -2,7 +2,7 @@
 title: 리눅스 환경설정하기
 date: 2020-06-15 18:30:00 +0900
 categories: [OS, Linux]
-tags: [linux]     # TAG names should always be lowercase
+tags: [env setting]     # TAG names should always be lowercase
 toc: true
 ---
 

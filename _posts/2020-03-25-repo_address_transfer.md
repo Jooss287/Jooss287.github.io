@@ -2,7 +2,7 @@
 title: 작업하던 Repository를 이전하기
 date: 2020-03-25 18:30:00 +0900
 categories: [Git]
-tags: [git repository]     # TAG names should always be lowercase
+tags: [git, repository]     # TAG names should always be lowercase
 toc: true
 ---
 
