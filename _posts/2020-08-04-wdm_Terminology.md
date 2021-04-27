@@ -1,5 +1,5 @@
 ---
-title: WDM에서 용어 정리
+title: WDM 용어 정리
 date: 2020-08-04 18:30:00 +0900
 categories: [Language, C]
 tags: [windows driver]     # TAG names should always be lowercase
