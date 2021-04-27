@@ -32,14 +32,14 @@ PCI\\CC_0300
 
 테스트용도로 사용하고 있는 Cyclone 10의 PCI 카드를 PC여 연결하여 확인하였더니
 장치관리자에 드라이버가 설치되지 않은 PCI의 정보를 이용하여 아래와 같이 Device의 정보를 알 수 있었습니다.  
-![장비 연결 시 볼 수 있는 정보](TIL_img/20-08-24_Driver_EquipmentInfo.png) 
+![장비 연결 시 볼 수 있는 정보](/assets/img/20-08-24_Driver_EquipmentInfo.png) 
 
 # Driver build
 드라이버의 빌드과정은 일반적인 프로그램 제작과는 조금 다른 과정을 거칩니다.
 Visual studio에서 inf빌드가 가능하지만 안정성을 이유로 EWDK를 사용하여 빌드과정을 거칩니다.
 Microsoft 설치파일배포 페이지에서 EWDK를 다운받을 수 있습니다.  
 [EWDK downalod page](https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk#download-icon-ewdk-with-visual-studio-build-tools)
-![MS EWDK 다운로드 홈페이지](TIL_img/20-08-24_EWDK_Download.png)
+![MS EWDK 다운로드 홈페이지](/assets/img/20-08-24_EWDK_Download.png)
 
 WDK와 버전을 맞춰 EWDK를 다운로드 한 뒤 마운트시키면 몇가지 파일들이 보입니다.
 그 중 LunchBuildEnv.cmd를 켜서 Command Mode에서 build 작업을 수행합니다.
@@ -86,7 +86,7 @@ bcdedit /set testsigning on
 bcdedit /set debug on 
 ```
 위의 코드를 입력하고 재부팅 하게 되면 아래와 같은 글자를 볼 수 있습니다.  
-![Testmode 결과 이미지](/asset/img/20-08-24_windows10_TestMode.png)
+![Testmode 결과 이미지](/assets/img/20-08-24_windows10_TestMode.png)
 * [Runtime 시 장비 설정 방법](https://ruinses.tistory.com/654)  
 
 1. 실행 창에서 ```devmgmt.msc```를 입력하여 장치관리자로 들어갑니다.
@@ -94,4 +94,4 @@ bcdedit /set debug on
 3. 목록에서 직접 선택한 하드웨어 설치(고급) 선택
 4. EWDK로 build 한 inf 파일 선택 및 설치
 5. 오류 없이 설치가 되었을 경우 아래와 같이 드라이버가 추가 된 것을 확인 할 수 있습니다.  
-![드라이버 설치 결과](/asset/img/20-08-24_DriverInstall.png)
+![드라이버 설치 결과](/assets/img/20-08-24_DriverInstall.png)
