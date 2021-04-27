@@ -1,7 +1,7 @@
 ---
 title: 코드의 수행시간 체크하기
 date: 2021-04-16 17:04:00 +0900
-categories: [Cpp]
+categories: [Language, Cpp]
 tags: [time_check]
 toc: true
 ---
