@@ -1,7 +1,7 @@
 ---
 title: Django를 처음 설치하기
 date: 2020-04-07 18:30:00 +0900
-categories: [Language, Python, Django]
+categories: [Language, Python]
 tags: [django]     # TAG names should always be lowercase
 toc: true
 ---

@@ -1,7 +1,7 @@
 ---
 title: Django와 Tomcat 연동하기
 date: 2020-04-09 18:30:00 +0900
-categories: [Language, Python, Django]
+categories: [Language, Python]
 tags: [tomcat, env setting]     # TAG names should always be lowercase
 toc: true
 ---
