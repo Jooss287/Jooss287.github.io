@@ -6,9 +6,8 @@ tags: [git, utility]     # TAG names should always be lowercase
 toc: true
 ---
 
-# GitGui - SourceTree 간단 사용법
-
 설치방법은 간단하니 패스  
+
 * [설치방법 Link1](https://coding-factory.tistory.com/249)
 * [설치방법 Link2](https://ux.stories.pe.kr/181)
 
@@ -22,10 +21,10 @@ Git Repo를 연동시켜야 제대로 된 화면을 볼 수 있으므로 우선 
 ![SourceTree 첫 화면](/assets/img/20-01-01-main_GUI.JPG)
 
 위 화면의 Clone 을 눌러 나오는 화면에서 Github Repository의 주소를 복사해서 붙여넣고 저장소 폴더 설정을 한 뒤 클론을 누른다
-![](/assets/img/20-01-01-Clone_CopyGithubAdr.png)  
+![clone repository](/assets/img/20-01-01-Clone_CopyGithubAdr.png)  
 
 이제 볼 수 있게 된 SourceTree의 메인 화면
-![](/assets/img/20-01-01-Clone_ExplainGuiScreen.png)
+![source tree main view](/assets/img/20-01-01-Clone_ExplainGuiScreen.png)
 화면에 대한 설명을 간단히 하면 아래와 같다.
 
     1. 현재 로컬(내 컴퓨터)에 다운되어 있는 브랜치의 리스트
@@ -39,17 +38,18 @@ Git Repo를 연동시켜야 제대로 된 화면을 볼 수 있으므로 우선 
     9. 메인 창에서 선택한 commit의 변경된 파일 리스트
     10. 9번에서 선택한 파일의 파일 내용 미리보기
 
-## 작업을 완료했다면 commit과 push를 해 보자.
+## 작업을 완료했다면 commit과 push를 해 보자
+
 편의상 다른작업 repo의 작업내용을 들고 왔다.
 ![commit 화면](/assets/img/20-01-01-SourceTree_Commit.png)
 스테이지에 올라간 파일은 push하여 온라인으로 올릴 파일  
-스테이지에 올라가지 않은 파일은 이전 commit대비 변경된 것이 있지만 온라인으로 올리지 않을 것으로 이해하면 쉽다. 
+스테이지에 올라가지 않은 파일은 이전 commit대비 변경된 것이 있지만 온라인으로 올리지 않을 것으로 이해하면 쉽다.
 아래의 '커밋 내용'을 적고 커밋을 하면 완료
 
-![](/assets/img/20-01-01-SourceTree_Push.png)
+![push](/assets/img/20-01-01-SourceTree_Push.png)
 history 창에서 commit 한 내용을 확인한다.  
-변경점이 제대로 된 것인지, 실수한것이 없는지 확인 후 push 버튼을 누르면 아래의 창을 확인 할 수 있다. 
-![](/assets/img/20-01-01-SourceTree_PushBox.png)
+변경점이 제대로 된 것인지, 실수한것이 없는지 확인 후 push 버튼을 누르면 아래의 창을 확인 할 수 있다.
+![push box](/assets/img/20-01-01-SourceTree_PushBox.png)
 현재의 작업한 내용은 단순한 markdown 형식의 문서 파일이므로 로컬 master 브랜치에서 원격 master 브랜치로 push하려는 내용이다.  
 다른 브랜치로 업데이트를 하려면 리모트 브랜치의 combo박스를 눌러 원하는 브랜치를 선택하면 된다.  
 설정 내용을 정확하게 지정했다면 push 버튼을 눌러 리모트 저장소로 업데이트한다.

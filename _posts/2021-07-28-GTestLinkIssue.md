@@ -55,7 +55,7 @@ TEST(fooTestcase, make_something_test)
 
 Test의 대상이 될 Project가 library형태의 파일이라면 build event를 사용하여 library를 복사하고 Library를 추가하여 사용하면 되겠지만 Library를 추가하지 않은 상황에서 Header file만 링크하여 사용하면 아래의 이미지와 같은 LNK2019를 볼 수 있습니다.
 
-![LNK Error](/assets/img/21-07-28-lnk2019_error.jpg)
+![LNK Error](/assets/img/21-07-28-lnk2019_error.JPG)
 
 ---
 
@@ -83,7 +83,7 @@ header와 cpp 를 compile하여 각각 생성된 obj을 이용하여 Link하는 
 Project를 통째로 Library 로 만들어 lib를 Link한다면 가장 좋겠지만 현재 exe만을 output으로 사용하고 있어 변경하기엔 공부해야할것이 좀 더 남아 있습니다.
 결국 생성된 Obj파일을 하나하나 Link해줘야 한다는 의미가 됩니다. 다행히 Visual studio IDE에서 Library를 링크하듯 Obj를 링크하여도 똑같은 방식으로 작동합니다.
 
-![object file link](/assets/img/21-07-28-obj_linking.jpg)
+![object file link](/assets/img/21-07-28-obj_linking.JPG)
 
 ## Reference
 

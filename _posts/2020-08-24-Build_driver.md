@@ -6,7 +6,6 @@ tags: [windows driver]     # TAG names should always be lowercase
 toc: true
 ---
 
-# Driver build
 드라이버의 빌드과정은 일반적인 프로그램 제작과는 조금 다른 과정을 거칩니다.
 Visual studio에서 inf빌드가 가능하지만 안정성을 이유로 EWDK를 사용하여 빌드과정을 거칩니다.
 Microsoft 설치파일배포 페이지에서 EWDK를 다운받을 수 있습니다.  
@@ -15,8 +14,9 @@ Microsoft 설치파일배포 페이지에서 EWDK를 다운받을 수 있습니�
 
 WDK와 버전을 맞춰 EWDK를 다운로드 한 뒤 마운트시키면 몇가지 파일들이 보입니다.
 그 중 LunchBuildEnv.cmd를 켜서 Command Mode에서 build 작업을 수행합니다.
-프로젝트가 있는 폴더로 ```cd``` 명령어를 이용하여 이동 후 빌드 작업을 수행하게 됩니다.
-![EWDK 실행 시 화면](TIL_img/20-08-24_EWDK_Lunch.png)
+프로젝트가 있는 폴더로 ```cd``` 명령어를 이용하여 이동 후 빌드 작업을 수행하게 됩니다.  
+
+![EWDK 실행 시 화면](/assets/img/20-08-24_EWDK_Lunch.png)
 
 프로젝트 폴더가 있는 곳에서 project 이름과 build type 등을 입력 해 주면 됩니다.
 
@@ -65,6 +65,7 @@ bcdedit /set debug on
 
 위의 코드를 입력하고 재부팅 하게 되면 아래와 같은 글자를 볼 수 있습니다.  
 ![Testmode 결과 이미지](/assets/img/20-08-24_windows10_TestMode.png)
+
 * [Runtime 시 장비 설정 방법](https://ruinses.tistory.com/654)  
 
 1. 실행 창에서 ```devmgmt.msc```를 입력하여 장치관리자로 들어갑니다.

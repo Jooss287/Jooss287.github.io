@@ -7,6 +7,7 @@ toc: true
 ---
 
 ## 파일 입출력과 IRP
+
 응용 프로그램 단에서 드라이버와 통신을 하게 되면 드라이퍼를 '파일'로써 인식하고 Win32API 를 사용하여 통신을 하게 됩니다.  
 Win32API의 CreateFile을 호출하게 되면 Dirver단에서 ```IRP_MJ_CREATE``` 명령어가 생성되어 드라이버에게 전달합니다.
 또한 드라이버에서는 ```MRP_MJ_CREATE```명령어를 처리하는 콜백 함수가 ```DEVICE_OBJECT```에 등록되어 있어야 합니다.
@@ -23,19 +24,22 @@ Win32API의 CreateFile을 호출하게 되면 Dirver단에서 ```IRP_MJ_CREATE``
 10. ```I/O Manager```는 IRP를 파괴, 결과물을 응용 프로그램에게 알려줌
 
 ## 관련 용어 정리
+
 ### PDO, FDO
+
 * PDO(Physica Device Object) - Bus Driver가 사용하는 Device Object.
 pDO는 상위 디바이스 드라이버가 생성시켜 주는 pDO라서 직접 생성하는 것이 아니라 받아오는 방식입니다.
 
 * FDO(Function Device Object) - 기능을 담당하는 디바이스 오브젝트 AddDevice에서 ```IOCreateDevice()```를 이용하여 FDO를 생성해 줍니다.
 이 때 생성된 FDO를 이용하여 다른 모든 루틴에서 FDO를 이용하여 작업을 하게 됩니다.
 
-* FIDO(Filter Device Object) - PDO와 FDO 사이에 붙어서 IRP가 FDO까지 내려가지 않고 FIDO에서 작업을 처리 할 수 있게 할 수 있습니다.
-상위 레벨 디바이스를 거쳐 하위 레벨 디바이스에 도달해 작업을 처리하지 않고 FIDO를 이용해 바로 처리하게 할 수 있습니다.(써보지 않음 부정확)
+* FIDO(Filter Device Object) - PDO와 FDO 사이에 붙어서 IRP가 FDO까지 내려가지 않고 FIDO에서 작업을 처리 할 수 있게 할 수 있습니다. 상위 레벨 디바이스를 거쳐 하위 레벨 디바이스에 도달해 작업을 처리하지 않고 FIDO를 이용해 바로 처리하게 할 수 있습니다.(써보지 않음 부정확)
+
 ### Paged Pool, Nonpaged Pool
+
 * Page와 Frame
-    > __Page__: 가상 메모리를 일정된 한 크기로 나눈 블록(가상 메모리의 최소 크기 단위)    
-    __Frame__: 물리 메모리를 일정한 크기로 나눈 블록 
+    > __Page__: 가상 메모리를 일정된 한 크기로 나눈 블록(가상 메모리의 최소 크기 단위)  
+    __Frame__: 물리 메모리를 일정한 크기로 나눈 블록
 * Paged Pool
     > 시스템 공간의 가상 메모리 영역을 지칭하는 말  
     __page out__: 실제 메모리에서 제거되어 페이징 파일에 기록 될 내용  
@@ -46,15 +50,17 @@ pDO는 상위 디바이스 드라이버가 생성시켜 주는 pDO라서 직접 
     > 프레임과 매칭을 못 했을 경우에 발생
 
 ### IRQ, IRQL(Interrupt Request Level)
+
 운영체제는 하드웨어 이벤트에 효과적으로 응답하기 위하여 인터럽트라는 매커니즘을 사용합니다.
 하드웨어 이벤트 뿐만 아니라 소프트웨어의 인터럽트도 지원을 하며 인터럽트에 대한 우선순위는 IRQL로 관리합니다.
 하위 level의 인터럽트를 처리하다가 더 상위의 인터럽트가 발생 시 상위 인터럽트부터 우선적으로 처리하게 됩니다.
+
 * IRQ(Interrupt Request): 물리적인 인터럽트
 * IRQL: Windows에서의 논리적인 인터럽트
 * DPC(Deferred Procedure Calls): 인터럽트를 처리하는 동안 다른 인터럽트가 발생하는 경우 문제가 생길 요지가 있습니다.
- 이를 방지하기 위해 DPC에서 우선순위가 낮고 나중에 처리되어야 할 인터럽트들을 큐 형태로 관리합니다. 
-
+ 이를 방지하기 위해 DPC에서 우선순위가 낮고 나중에 처리되어야 할 인터럽트들을 큐 형태로 관리합니다.
 
 ### Reference
+
 * [IRP, I/O Stack 관련 내용 정리](https://richong.tistory.com/275)  
 * [윈도우 드라이버를 만들 때 알아야 할 기초적인 내용들](https://www.benjaminlog.com/entry/what-every-driver-programmer-should-know)
