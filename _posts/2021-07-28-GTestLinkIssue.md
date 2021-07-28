@@ -1,6 +1,6 @@
 ---
 title: Google Test Link Error(LNK2019) 해결방법
-date: 2021-07-28 18:30:00 +0900
+date: 2021-07-28 17:00:00 +0900
 categories: [Language, Cpp]
 tags: [unit test, gtest]     # TAG names should always be lowercase
 toc: true
